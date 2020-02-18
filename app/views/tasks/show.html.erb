@@ -1,5 +1,11 @@
-<h1> Detail of your task</h1>
+<div class="container">
+  <h2> Detail of your task</h2>
 
-<ul>
-  <%= @task.details%>
-</ul>
+  <ul>
+    <%= @task.details%>
+  </ul>
+</div>
+
+<%= link_to "go back", tasks_path  %>
+<%= link_to 'Edit task', edit_task_path %>
+

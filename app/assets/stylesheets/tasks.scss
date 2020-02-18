@@ -1,3 +1,58 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  font-family: Futura;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-family: Futura;
+  font-size: 18px;
+}
+.container {
+  font-family: Futura;
+  width: 400px;
+  margin: auto;
+  margin-top: 400px;
+  margin-left: 500px;
+  text-decoration: none;
+}
+
+.create {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.center {
+  text-align: right;
+}
+
+body {
+  background-color: #deff8b;
+}
+
+.deco {
+  text-decoration: none;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+  background-position: 100% 0;
+  }
+}
+#animate-area {
+  width: 900px;
+  height: 500px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0276/2332/5795/articles/peggy_gou_NANA_300x300.gif?v=1570795144);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 15s linear infinite alternate;
+}

@@ -1,9 +1,20 @@
-<h1> Tasks </h1>
+<body id= 'animate-area'>
+  <div class="container">
+    <h1> Task Manager </h1>
+      <ul>
+        <% @tasks.each do |task|%>
+        <li> <%= link_to task.title , task_path(task), :class => 'deco' %>
+          <%= link_to "💥", delete_task_path(task),
+          method: :delete,
+          data: { confirm: "Are you sure?" }, :class => 'deco'%>
+        <% end %>
+        </li>
+      </ul>
+     <div class="center">
+        <%= link_to 'Create task', tasks_new_path, :class => "create" %>
+     </div>
+  </div>
+</body>
 
-  <ul>
-    <% @tasks.each do |task|%>
-    <li> <%= task.title %></li>
-    <% end %>
-  </ul>
 
-  <%= link_to "Go back", /tasks %>
+
